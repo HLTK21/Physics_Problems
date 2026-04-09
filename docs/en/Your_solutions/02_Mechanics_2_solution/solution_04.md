@@ -1,81 +1,125 @@
-# Physics Solution: Energy and Momentum
+# Physics Problem Set Solutions
 
-This problem involves a block sliding down a frictionless track and undergoing a perfectly inelastic collision at the base.
+## 1. The Sliding Block & Collision
 
-## 1. Problem Parameters
-* **Mass of block 1 ($m_1$):** 0.5 kg
-* **Initial height ($h$):** 3.0 m
-* **Mass of block 2 ($m_2$):** 1.5 kg (initially at rest)
-* **Gravity ($g$):** $9.8 \, \text{m/s}^2$
+**Problem:** A 0.5 kg block slides down from 3.0 m and sticks to a 1.5 kg block at rest. Find the final speed.
+
+### Step 1: Find the speed at the bottom (Energy Conservation)
+The potential energy ($mgh$) at the top is converted to kinetic energy ($\frac{1}{2}mv^2$) at the bottom.
+
+$$
+
+mgh = \frac{1}{2}mv^2
+
+$$
+
+Solving for $v$ (mass cancels out):
+
+$$
+
+v = \sqrt{2gh}
+
+$$
+
+Using $g = 9.8$ and $h = 3.0$:
+
+$$
+
+v = \sqrt{2 \cdot 9.8 \cdot 3.0} = \sqrt{58.8} \approx 7.67 \, \text{m/s}
+
+$$
+
+### Step 2: Find the combined speed (Momentum Conservation)
+Since the blocks stick together, we use the inelastic collision formula. Let $m_1 = 0.5$, $v_1 = 7.67$, $m_2 = 1.5$, and $v_2 = 0$.
+
+$$
+
+m_1v_1 + m_2v_2 = (m_1 + m_2)v_f
+
+$$
+
+$$
+
+(0.5 \cdot 7.67) + (1.5 \cdot 0) = (0.5 + 1.5)v_f
+
+$$
+
+$$
+
+3.835 = 2.0 \cdot v_f
+
+$$
+
+$$
+
+v_f = \frac{3.835}{2.0} = 1.9175 \approx 1.92 \, \text{m/s}
+
+$$
+
+**Final Speed:** 1.92 m/s
 
 ---
 
-## 2. Step-by-Step Solution
+## 2. Simple Pendulum Calculations
 
-### Step 1: Velocity at the bottom of the track
-Since the track is frictionless, the potential energy at the top converts entirely into kinetic energy at the bottom.
+### A. Gravitational Dependence (Moon vs. Earth)
+**Problem:** $T_{Earth} = 4s$. Find $T_{Moon}$ where $g_{Moon} = \frac{1}{6}g_{Earth}$.
 
-$$
-
-m_1 gh = \frac{1}{2} m_1 v_1^2
+From the formula $T = 2\pi\sqrt{\frac{L}{g}}$, we see that $T \propto \frac{1}{\sqrt{g}}$.
 
 $$
 
-We can cancel $m_1$ from both sides and solve for $v_1$:
+\frac{T_{Moon}}{T_{Earth}} = \frac{\sqrt{g_{Earth}}}{\sqrt{g_{Moon}}}
 
 $$
 
-v_1 = \sqrt{2gh}
+Since $g_{Moon} = \frac{g_{Earth}}{6}$:
 
 $$
 
-Plugging in our values:
-
-$$
-
-v_1 = \sqrt{2 \cdot 9.8 \cdot 3.0} = \sqrt{58.8} \approx 7.668 \, \text{m/s}
-
-$$
-
-### Step 2: Conservation of Momentum
-At the bottom, block 1 hits block 2. Since they stick together, we use the conservation of momentum formula for an inelastic collision. Note that $v_2 = 0$ because the second block is at rest.
-
-$$
-
-m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f
-
-$$
-
-Substituting the known values:
-
-$$
-
-(0.5)(7.668) + (1.5)(0) = (0.5 + 1.5) v_f
+\frac{T_{Moon}}{4} = \sqrt{6}
 
 $$
 
 $$
 
-3.834 = 2.0 v_f
+T_{Moon} = 4 \cdot \sqrt{6} \approx 4 \cdot 2.45 \approx 9.80 \, \text{s}
 
 $$
 
-### Step 3: Solve for Final Velocity ($v_f$)
-Divide the total initial momentum by the combined mass:
+**Period on Moon:** 9.80 seconds.
+
+### B. Required Length for $T = 1s$
+**Problem:** Find $L$ when $T = 1.0$ and $g = 9.8$.
+
+Using the period formula:
 
 $$
 
-v_f = \frac{3.834}{2.0}
+1 = 2\pi\sqrt{\frac{L}{9.8}}
+
+$$
+
+Divide by $2\pi$:
+
+$$
+
+\frac{1}{2\pi} = \sqrt{\frac{L}{9.8}}
+
+$$
+
+Square both sides:
+
+$$
+
+\frac{1}{4\pi^2} = \frac{L}{9.8}
 
 $$
 
 $$
 
-v_f = 1.917 \, \text{m/s}
+L = \frac{9.8}{4\pi^2} \approx \frac{9.8}{39.48} \approx 0.248 \, \text{m}
 
 $$
 
----
-
-## Final Result
-The speed of the combined mass just after the collision is approximately **1.92 m/s**.
+**Required Length:** 24.8 cm
