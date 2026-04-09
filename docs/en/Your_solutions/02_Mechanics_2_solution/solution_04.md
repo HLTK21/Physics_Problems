@@ -1,125 +1,203 @@
-# Physics Problem Set Solutions
-
-## 1. The Sliding Block & Collision
-
-**Problem:** A 0.5 kg block slides down from 3.0 m and sticks to a 1.5 kg block at rest. Find the final speed.
-
-### Step 1: Find the speed at the bottom (Energy Conservation)
-The potential energy ($mgh$) at the top is converted to kinetic energy ($\frac{1}{2}mv^2$) at the bottom.
-
-$$
-
-mgh = \frac{1}{2}mv^2
-
-$$
-
-Solving for $v$ (mass cancels out):
-
-$$
-
-v = \sqrt{2gh}
-
-$$
-
-Using $g = 9.8$ and $h = 3.0$:
-
-$$
-
-v = \sqrt{2 \cdot 9.8 \cdot 3.0} = \sqrt{58.8} \approx 7.67 \, \text{m/s}
-
-$$
-
-### Step 2: Find the combined speed (Momentum Conservation)
-Since the blocks stick together, we use the inelastic collision formula. Let $m_1 = 0.5$, $v_1 = 7.67$, $m_2 = 1.5$, and $v_2 = 0$.
-
-$$
-
-m_1v_1 + m_2v_2 = (m_1 + m_2)v_f
-
-$$
-
-$$
-
-(0.5 \cdot 7.67) + (1.5 \cdot 0) = (0.5 + 1.5)v_f
-
-$$
-
-$$
-
-3.835 = 2.0 \cdot v_f
-
-$$
-
-$$
-
-v_f = \frac{3.835}{2.0} = 1.9175 \approx 1.92 \, \text{m/s}
-
-$$
-
-**Final Speed:** 1.92 m/s
+# 🧭 Simple Pendulum – Step by Step Solution
 
 ---
 
-## 2. Simple Pendulum Calculations
+## 📘 Key Definitions
 
-### A. Gravitational Dependence (Moon vs. Earth)
-**Problem:** $T_{Earth} = 4s$. Find $T_{Moon}$ where $g_{Moon} = \frac{1}{6}g_{Earth}$.
+- **Simple Pendulum**: A system consisting of a small mass (bob) attached to a light string, swinging under the influence of gravity.
+- **Period (T)**: The time required for one complete oscillation (back and forth motion).
+- **Gravitational Acceleration (g)**: Acceleration due to gravity (on Earth ≈ 9.81 m/s²).
 
-From the formula $T = 2\pi\sqrt{\frac{L}{g}}$, we see that $T \propto \frac{1}{\sqrt{g}}$.
+---
 
-$$
+## 📐 Fundamental Formula
 
-\frac{T_{Moon}}{T_{Earth}} = \frac{\sqrt{g_{Earth}}}{\sqrt{g_{Moon}}}
-
-$$
-
-Since $g_{Moon} = \frac{g_{Earth}}{6}$:
+The period of a simple pendulum is given by:
 
 $$
 
-\frac{T_{Moon}}{4} = \sqrt{6}
+T = 2\pi \sqrt{\frac{L}{g}}
+
+$$
+
+Where:
+- \( T \) = period (seconds)
+- \( L \) = length of the pendulum (meters)
+- \( g \) = gravitational acceleration (m/s²)
+
+---
+
+# 🧩 Problem 1: Period on the Moon
+
+### 🔹 Given:
+- Period on Earth: \( T_E = 4 \) s
+- Moon gravity: \( g_M = \frac{g_E}{6} \)
+
+---
+
+## ✏️ Step 1: Write period relation
+
+Since length \( L \) is the same:
+
+$$
+
+T \propto \sqrt{\frac{1}{g}}
+
+$$
+
+---
+
+## ✏️ Step 2: Ratio of periods
+
+$$
+
+\frac{T_M}{T_E} = \sqrt{\frac{g_E}{g_M}}
+
+$$
+
+---
+
+## ✏️ Step 3: Substitute \( g_M = \frac{g_E}{6} \)
+
+$$
+
+\frac{T_M}{T_E} = \sqrt{\frac{g_E}{g_E/6}} = \sqrt{6}
+
+$$
+
+---
+
+## ✏️ Step 4: Solve for \( T_M \)
+
+$$
+
+T_M = T_E \cdot \sqrt{6}
 
 $$
 
 $$
 
-T_{Moon} = 4 \cdot \sqrt{6} \approx 4 \cdot 2.45 \approx 9.80 \, \text{s}
+T_M = 4 \cdot \sqrt{6}
 
 $$
 
-**Period on Moon:** 9.80 seconds.
+$$
 
-### B. Required Length for $T = 1s$
-**Problem:** Find $L$ when $T = 1.0$ and $g = 9.8$.
-
-Using the period formula:
+T_M \approx 4 \cdot 2.45 = 9.8 \text{ s}
 
 $$
 
-1 = 2\pi\sqrt{\frac{L}{9.8}}
+---
+
+## ✅ Final Answer:
+
+**The period on the Moon is approximately:**
 
 $$
 
-Divide by $2\pi$:
+T_M \approx 9.8 \text{ seconds}
 
 $$
 
-\frac{1}{2\pi} = \sqrt{\frac{L}{9.8}}
+---
+
+# 🧩 Problem 2: Length for 1 Second Period
+
+### 🔹 Given:
+- \( T = 1 \) s
+- \( g = 9.81 \, \text{m/s}^2 \)
+
+---
+
+## ✏️ Step 1: Start with formula
 
 $$
+
+T = 2\pi \sqrt{\frac{L}{g}}
+
+$$
+
+---
+
+## ✏️ Step 2: Solve for \( L \)
+
+Divide both sides by \( 2\pi \):
+
+$$
+
+\frac{T}{2\pi} = \sqrt{\frac{L}{g}}
+
+$$
+
+---
 
 Square both sides:
 
 $$
 
-\frac{1}{4\pi^2} = \frac{L}{9.8}
+\left(\frac{T}{2\pi}\right)^2 = \frac{L}{g}
+
+$$
+
+---
+
+Multiply by \( g \):
+
+$$
+
+L = g \left(\frac{T}{2\pi}\right)^2
+
+$$
+
+---
+
+## ✏️ Step 3: Substitute values
+
+$$
+
+L = 9.81 \left(\frac{1}{2\pi}\right)^2
+
+$$
+
+---
+
+## ✏️ Step 4: Calculate
+
+$$
+
+2\pi \approx 6.283
 
 $$
 
 $$
 
-L = \frac{9.8}{4\pi^2} \approx \frac{9.8}{39.48} \approx 0.248 \, \text{m}
+\left(\frac{1}{6.283}\right)^2 \approx 0.0253
 
 $$
 
-**Required Length:** 24.8 cm
+$$
+
+L \approx 9.81 \cdot 0.0253 \approx 0.248 \text{ m}
+
+$$
+
+---
+
+## ✅ Final Answer:
+
+**Required length:**
+
+$$
+
+L \approx 0.25 \text{ m}
+
+$$
+
+---
+
+# 🎯 Summary
+
+- 🌕 Period on Moon: **~9.8 s**
+- 📏 Length for 1 s period: **~0.25 m**
+
+---
