@@ -1,14 +1,19 @@
-# Physics Problem: Energy & Momentum
+# Physics Solution: Energy and Momentum
 
-## Problem Statement
-A **0.5 kg** block slides down a frictionless track from a height of **3.0 m**. At the bottom, it collides and sticks to a **1.5 kg** block initially at rest. What is the speed of the combined mass just after the collision?
+This problem involves a block sliding down a frictionless track and undergoing a perfectly inelastic collision at the base.
+
+## 1. Problem Parameters
+* **Mass of block 1 ($m_1$):** 0.5 kg
+* **Initial height ($h$):** 3.0 m
+* **Mass of block 2 ($m_2$):** 1.5 kg (initially at rest)
+* **Gravity ($g$):** $9.8 \, \text{m/s}^2$
 
 ---
 
-## Step-by-Step Solution
+## 2. Step-by-Step Solution
 
-### Step 1: Find the velocity of the first block at the bottom
-As the block slides down the frictionless track, its potential energy ($PE$) is converted into kinetic energy ($KE$). We use the conservation of energy principle:
+### Step 1: Velocity at the bottom of the track
+Since the track is frictionless, the potential energy at the top converts entirely into kinetic energy at the bottom.
 
 $$
 
@@ -16,7 +21,7 @@ m_1 gh = \frac{1}{2} m_1 v_1^2
 
 $$
 
-We can cancel out the mass ($m_1$) and solve for $v_1$:
+We can cancel $m_1$ from both sides and solve for $v_1$:
 
 $$
 
@@ -24,59 +29,53 @@ v_1 = \sqrt{2gh}
 
 $$
 
-Using $g = 9.8 \, \text{m/s}^2$ and $h = 3.0 \, \text{m}$:
+Plugging in our values:
 
 $$
 
-v_1 = \sqrt{2 \cdot 9.8 \cdot 3.0} = \sqrt{58.8} \approx 7.67 \, \text{m/s}
+v_1 = \sqrt{2 \cdot 9.8 \cdot 3.0} = \sqrt{58.8} \approx 7.668 \, \text{m/s}
 
 $$
 
-### Step 2: Analyze the Collision
-Now, the first block ($m_1 = 0.5 \, \text{kg}$) moving at $v_1 \approx 7.67 \, \text{m/s}$ hits the second block ($m_2 = 1.5 \, \text{kg}$) which is at rest ($v_2 = 0$). Since they stick together, we use the conservation of momentum for a perfectly inelastic collision.
-
-**Initial Momentum:**
-$$
-
-p_{initial} = m_1 v_1 + m_2 v_2
+### Step 2: Conservation of Momentum
+At the bottom, block 1 hits block 2. Since they stick together, we use the conservation of momentum formula for an inelastic collision. Note that $v_2 = 0$ because the second block is at rest.
 
 $$
 
-**Final Momentum:**
-$$
-
-p_{final} = (m_1 + m_2) v_f
+m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f
 
 $$
 
-### Step 3: Solve for the Final Velocity ($v_f$)
-Setting the initial momentum equal to the final momentum:
+Substituting the known values:
 
 $$
 
-(0.5 \, \text{kg} \cdot 7.67 \, \text{m/s}) + (1.5 \, \text{kg} \cdot 0) = (0.5 \, \text{kg} + 1.5 \, \text{kg}) \cdot v_f
+(0.5)(7.668) + (1.5)(0) = (0.5 + 1.5) v_f
 
 $$
 
 $$
 
-3.835 = 2.0 \cdot v_f
+3.834 = 2.0 v_f
+
+$$
+
+### Step 3: Solve for Final Velocity ($v_f$)
+Divide the total initial momentum by the combined mass:
+
+$$
+
+v_f = \frac{3.834}{2.0}
 
 $$
 
 $$
 
-v_f = \frac{3.835}{2.0}
-
-$$
-
-$$
-
-v_f \approx 1.92 \, \text{m/s}
+v_f = 1.917 \, \text{m/s}
 
 $$
 
 ---
 
-## Final Answer
-The speed of the combined mass just after the collision is **1.92 m/s**.
+## Final Result
+The speed of the combined mass just after the collision is approximately **1.92 m/s**.
