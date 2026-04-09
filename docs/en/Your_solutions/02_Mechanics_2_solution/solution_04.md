@@ -1,203 +1,166 @@
-# 🧭 Simple Pendulum – Step by Step Solution
+# 🧲 Physics Problem: Inelastic Collision After Sliding
+
+## 📌 Problem Statement
+A 0.5 kg block slides down a frictionless track from a height of 3.0 m.  
+At the bottom, it collides and sticks to a 1.5 kg block, which is initially at rest.  
+
+👉 Find the **speed of the combined mass just after the collision**.
 
 ---
 
-## 📘 Key Definitions
+# 📚 Key Definitions & Formulas
 
-- **Simple Pendulum**: A system consisting of a small mass (bob) attached to a light string, swinging under the influence of gravity.
-- **Period (T)**: The time required for one complete oscillation (back and forth motion).
-- **Gravitational Acceleration (g)**: Acceleration due to gravity (on Earth ≈ 9.81 m/s²).
-
----
-
-## 📐 Fundamental Formula
-
-The period of a simple pendulum is given by:
+## 1. Conservation of Mechanical Energy
+When no non-conservative forces (like friction) act:
 
 $$
 
-T = 2\pi \sqrt{\frac{L}{g}}
+E_{initial} = E_{final}
 
 $$
 
-Where:
-- \( T \) = period (seconds)
-- \( L \) = length of the pendulum (meters)
-- \( g \) = gravitational acceleration (m/s²)
-
----
-
-# 🧩 Problem 1: Period on the Moon
-
-### 🔹 Given:
-- Period on Earth: \( T_E = 4 \) s
-- Moon gravity: \( g_M = \frac{g_E}{6} \)
-
----
-
-## ✏️ Step 1: Write period relation
-
-Since length \( L \) is the same:
+For gravitational potential energy converting to kinetic energy:
 
 $$
 
-T \propto \sqrt{\frac{1}{g}}
+mgh = \frac{1}{2}mv^2
 
 $$
 
 ---
 
-## ✏️ Step 2: Ratio of periods
+## 2. Velocity from Height
+Solving for velocity:
 
 $$
 
-\frac{T_M}{T_E} = \sqrt{\frac{g_E}{g_M}}
-
-$$
-
----
-
-## ✏️ Step 3: Substitute \( g_M = \frac{g_E}{6} \)
-
-$$
-
-\frac{T_M}{T_E} = \sqrt{\frac{g_E}{g_E/6}} = \sqrt{6}
+v = \sqrt{2gh}
 
 $$
 
 ---
 
-## ✏️ Step 4: Solve for \( T_M \)
+## 3. Conservation of Momentum (Inelastic Collision)
+Momentum is conserved even if kinetic energy is not:
 
 $$
 
-T_M = T_E \cdot \sqrt{6}
+m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f
 
 $$
 
-$$
+For this problem:
 
-T_M = 4 \cdot \sqrt{6}
+- Second block is initially at rest → $v_2 = 0$
 
-$$
-
-$$
-
-T_M \approx 4 \cdot 2.45 = 9.8 \text{ s}
+So:
 
 $$
 
----
-
-## ✅ Final Answer:
-
-**The period on the Moon is approximately:**
-
-$$
-
-T_M \approx 9.8 \text{ seconds}
+m_1 v_1 = (m_1 + m_2) v_f
 
 $$
 
 ---
 
-# 🧩 Problem 2: Length for 1 Second Period
+# 🧮 Step-by-Step Solution
 
-### 🔹 Given:
-- \( T = 1 \) s
-- \( g = 9.81 \, \text{m/s}^2 \)
+## Step 1: Find velocity of the first block before collision
 
----
-
-## ✏️ Step 1: Start with formula
+Using energy conservation:
 
 $$
 
-T = 2\pi \sqrt{\frac{L}{g}}
+v_1 = \sqrt{2gh}
 
 $$
 
----
-
-## ✏️ Step 2: Solve for \( L \)
-
-Divide both sides by \( 2\pi \):
+Substitute values:
+- $g = 9.8 \, m/s^2$
+- $h = 3.0 \, m$
 
 $$
 
-\frac{T}{2\pi} = \sqrt{\frac{L}{g}}
+v_1 = \sqrt{2 \cdot 9.8 \cdot 3.0}
 
 $$
 
----
+$$
 
-Square both sides:
+v_1 = \sqrt{58.8}
 
 $$
 
-\left(\frac{T}{2\pi}\right)^2 = \frac{L}{g}
+$$
+
+v_1 \approx 7.67 \, m/s
 
 $$
 
 ---
 
-Multiply by \( g \):
+## Step 2: Apply conservation of momentum
+
+Given:
+- $m_1 = 0.5 \, kg$
+- $m_2 = 1.5 \, kg$
+- $v_2 = 0$
+
+Equation:
 
 $$
 
-L = g \left(\frac{T}{2\pi}\right)^2
+m_1 v_1 = (m_1 + m_2) v_f
 
 $$
 
----
-
-## ✏️ Step 3: Substitute values
+Substitute:
 
 $$
 
-L = 9.81 \left(\frac{1}{2\pi}\right)^2
-
-$$
-
----
-
-## ✏️ Step 4: Calculate
-
-$$
-
-2\pi \approx 6.283
+0.5 \cdot 7.67 = (0.5 + 1.5) v_f
 
 $$
 
 $$
 
-\left(\frac{1}{6.283}\right)^2 \approx 0.0253
-
-$$
-
-$$
-
-L \approx 9.81 \cdot 0.0253 \approx 0.248 \text{ m}
+3.835 = 2.0 \, v_f
 
 $$
 
 ---
 
-## ✅ Final Answer:
-
-**Required length:**
+## Step 3: Solve for final velocity
 
 $$
 
-L \approx 0.25 \text{ m}
+v_f = \frac{3.835}{2.0}
+
+$$
+
+$$
+
+v_f \approx 1.92 \, m/s
 
 $$
 
 ---
 
-# 🎯 Summary
+# ✅ Final Answer
 
-- 🌕 Period on Moon: **~9.8 s**
-- 📏 Length for 1 s period: **~0.25 m**
+$$
+
+\boxed{v_f \approx 1.92 \, m/s}
+
+$$
+
+---
+
+# 💡 Key Insights
+
+- Mechanical energy is conserved **before the collision**.
+- Momentum is conserved **during the collision**.
+- Because the blocks stick together, this is a **perfectly inelastic collision**.
+- Some kinetic energy is lost, but momentum remains constant.
 
 ---
